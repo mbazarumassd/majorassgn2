@@ -7,8 +7,8 @@
     <title>Massachusetts Geospatial Visualizations</title>
 
     <!-- Load D3 and TopoJSON libraries from the lib directory -->
-    <script src="./lib/d3.js"></script>
-    <script src="./lib/d3jstopojson.v1.js"></script>
+    <script src="./d3.js"></script>
+    <script src="./d3jstopojson.v1.js"></script>
 
     <style>
         body {
@@ -84,8 +84,8 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const MA_counties = "./data/towns.topojson";
-            const gini_index = "./data/gini_index.csv";
+            const MA_counties = "./towns.topojson";
+            const gini_index = "./gini_index.csv";
 
             const fipsMapping = {
                 "Barnstable County": 25001,
